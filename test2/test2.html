@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout Demo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 90%;
+        border: 1px solid #000;
+        margin: auto;
+      }
+      .header {
+        display: flex;
+        height: 150px;
+        border-bottom: 1px solid #000;
+      }
+      .header .logo,
+      .header .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header .logo {
+        width: 30%;
+        border-right: 1px solid #000;
+      }
+      .header .banner {
+        width: 70%;
+      }
+      .nav {
+        display: flex;
+        height: 50px;
+        border-bottom: 1px solid #000;
+      }
+      .nav .nav-item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #000;
+        height: 100%;
+      }
+      .nav .nav-item:last-child {
+        border-right: none;
+      }
+      .main {
+        display: flex;
+        height: 600px;
+      }
+      .main .sidebar,
+      .main .list-product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main .sidebar {
+        width: 30%;
+        border-right: 1px solid #000;
+      }
+      .main .list-product {
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">Logo</div>
+        <div class="banner">Banner</div>
+      </div>
+
+      <div class="nav">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">Product</div>
+        <div class="nav-item"></div>
+        <div class="nav-item">Order</div>
+      </div>
+
+      <div class="main">
+        <div class="sidebar">Sidebar</div>
+        <div class="list-product">List Product</div>
+      </div>
+    </div>
+  </body>
+</html>
